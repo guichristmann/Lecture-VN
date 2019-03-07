@@ -1,0 +1,102 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While loading <'FactorScale' <'Image' 'ProfJB_0002_RightArm-Fist-2.png'> 0.5 0.5 True>:
+  File "game/script.rpy", line 194, in script
+    j "Hello! I am Prof. Jacky Baltes."
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'ProfJB_0002_RightArm-Fist-2.png'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 194, in script
+    j "Hello! I am Prof. Jacky Baltes."
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/ast.py", line 653, in execute
+    statement_name("say")
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/exports.py", line 1572, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/core.py", line 2237, in do_with
+    clear=clear)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/core.py", line 2687, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/core.py", line 3171, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/core.py", line 2083, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 516, in renpy.display.render.render_screen
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/transition.py", line 360, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/layout.py", line 336, in render
+    surf = render(self.child, width, height, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 151, in renpy.display.render.render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 244, in renpy.display.render.render
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/im.py", line 580, in render
+    return cache.get(self, render=True)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/im.py", line 860, in load
+    surf = cache.get(self.image)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/im.py", line 266, in get
+    surf = image.load()
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/display/im.py", line 625, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "/home/tioguerra/renpy-7.2.0-sdk/renpy/loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'ProfJB_0002_RightArm-Fist-2.png'.
+
+Linux-4.15.0-45-generic-x86_64-with-debian-stretch-sid
+Ren'Py 7.2.0.424
+ProfJB 1.0
+Wed Mar  6 17:46:26 2019
