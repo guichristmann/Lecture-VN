@@ -5,8 +5,9 @@ This is a WIP. This README should be updated as new ideas and functionalities ar
 # Structure
 - `Projects/` -- The projects folder. Each lecture slide will be converted into a different project.
 - `Resources/` -- Contains the resource files: the characters drawings.
-	- `../ProfJB/` -- Images for **Prof. JB**. The only character we have for now.
-- `Slides/` -- Contains the PDF slides, exported from Google Slides.
+	- `../ProfJB/` -- Images for **Prof. JB**. The professor character.
+	- `../MrC/` -- Images for **Mr. C**. One of the student characters. 
+- `Slides/` -- Contains the PDF and extracted PNG slides.
 	
 ## Current Method
 Google Slides can be exported as PDF files. PDF files can be converted into high quality .PNG images using *ghostscript* in Linux.
