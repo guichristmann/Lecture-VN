@@ -14,7 +14,9 @@ This is a WIP. This README should be updated as new ideas and functionalities ar
 Google Slides can be exported as PDF files. PDF files can be converted into high quality .PNG images using *ghostscript* in Linux.
 
 Run `convertPDFSlidesToPng.py` to extract .png images from the .pdf files inside `Slides/` into their own folder. 
+
 Run `createRenPyProjectFromSlides.py <PNG-slides-folder> <project-name>` to create a new project from the PNG images.
+
 To edit a project open `"ProjectName"/game/script.rpy`. All characters and slides should already be included.
 
 #### Dependencies
