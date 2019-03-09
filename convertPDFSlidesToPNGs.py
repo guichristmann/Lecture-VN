@@ -1,4 +1,5 @@
-""" This is a utility script to convert PDF slides to PNG images.
+""" 
+    This is an utility script to convert PDF slides to PNG images.
     When this is run it looks for every PDF inside "Slides/" folder,
     creates a new folder with the same filename and generates .PNG
     images for each page of the PDF.
@@ -7,24 +8,40 @@
 import sys
 import os
 from os import path
+from glob import glob
 import ghostscript
+from PIL import Image
 
-def pdf2png(pdf_input_path, jpeg_output_path):
+RENPY_RES = (1280, 720)
+
+def pdf2png(pdf_input_path, output_path):
     # Set up arguments for conversion. Note that ghostscript requires
     # bytes and not strings. Kinda bothersome
 
     # Output path is encoded as bytes. Also using the %d notation
     # for generating image files.
-    output_arg = str.encode("-o" + jpeg_output_path + "/slide-%000d.png")
+    output_arg = str.encode("-o" + output_path + "/slide%000d.png")
     args = [b"",
             b"-dNOPAUSE",         # Don't pause between pages
             b"-sDEVICE=pngalpha", # Export format
-            b"-r300",             # Resolution
+            b"-r200",             # Resolution
             b"-dTextAlphaBits=4", # Antialiasing for text
             output_arg,           # Output argument
             str.encode(pdf_input_path)] # Byte encoded input
     # Call ghostscript
     ghostscript.Ghostscript(*args)
+
+# Resize the images in specified folder to RenPy size (1280x720)
+def resizePNGs(images_path):
+    # Retrieve all .png inside folder
+    image_fns = glob(images_path + "/*.png")
+
+    for fn in image_fns:
+        img = Image.open(fn)
+        # TODO: I'm not sure the results will be good for images that are not
+        # 16x8 already. Check other methods later, something that adds padding
+        img.thumbnail(RENPY_RES, Image.ANTIALIAS)
+        img.save(fn, "PNG")
 
 # Folder to look for the PDFs
 slides_path = "Slides/"
@@ -55,5 +72,10 @@ for f in pdf_fns:
 
         # Generate .PNGs from PDF using ghostscript
         pdf2png(f, dir_path)
+
+        print("Resizing images to RenPy size...")
+        # Resize the images to RenPy size (1280x720)
+        resizePNGs(dir_path)
+        print("Done.")
     else:
         print("Skipping {}. Matching directory found.\n".format(f))

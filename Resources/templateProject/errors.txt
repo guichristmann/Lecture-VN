@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 127: end of line expected.
+    gc "I can't believe you said water {} times.".format(wrong_tries)
+                                                 ^
+
+Ren'Py Version: Ren'Py 7.1.3.1092
+Fri Mar  8 14:46:51 2019
