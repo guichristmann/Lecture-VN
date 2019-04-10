@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "transforms.rpy", line 8, in script
+    init python:
+  File "transforms.rpy", line 9, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "transforms.rpy", line 8, in script
+    init python:
+  File "/home/guichristmann/Programming/Ren'Py/renpy-7.1.3-sdk/renpy/ast.py", line 881, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/guichristmann/Programming/Ren'Py/renpy-7.1.3-sdk/renpy/python.py", line 1913, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "transforms.rpy", line 9, in <module>
+    from PIL import Image
+ImportError: No module named PIL
+
+Linux-4.15.0-46-generic-x86_64-with-debian-buster-sid
+Ren'Py 7.1.3.1092
+Lectures with Prof. JB 1.0
+Thu Mar 21 07:01:49 2019

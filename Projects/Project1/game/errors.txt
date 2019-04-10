@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "backgrounds.rpy", line 2: is not terminated with a newline. (Check strings and parenthesis.)
+    image bg introduction = im.Scale("images/Slides/introduction.png"
+
+Ren'Py Version: Ren'Py 7.1.3.1092
+Thu Mar 21 07:16:25 2019

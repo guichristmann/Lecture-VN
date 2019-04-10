@@ -1,0 +1,8 @@
+image bg START = "images/Slides/START.png"
+image bg introduction = "images/Slides/introduction.png"
+image bg slide_00003_frag_00000 = "images/Slides/slide_00003_frag_00000.png"
+image bg slide_00004_frag_00000 = "images/Slides/slide_00004_frag_00000.png"
+image bg background = "images/Slides/background.png"
+image bg hierarchy1 = "images/Slides/hierarchy1.png"
+image bg entropy = "images/Slides/entropy.png"
+image bg example = "images/Slides/example.png"
