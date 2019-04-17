@@ -1,0 +1,16 @@
+jb neutral
+jb mad
+jb skeptical
+jb ooh
+
+gc neutral
+gc neutral arm_raiser
+gc smile
+gc mad
+gc frown
+
+msG neutral
+msG neutral explaining
+msG mad
+msG curious
+msG curious explaining
