@@ -1,1 +1,1 @@
-image bg neutral = "Backgrounds/neutral.jpg"
+image bg neutral = "Slides/neutral.jpg"

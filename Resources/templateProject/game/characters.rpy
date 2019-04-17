@@ -347,3 +347,176 @@ image gc mouth speaking:
         choice:
             .10
     repeat
+
+###################################################################
+
+################## Ms. G. Character ###########################
+
+image msG neutral = LiveComposite(
+    (550, 700),
+    (0, 0), "msG body",
+    (0, 0), "msG head",
+    (0, 0), "msG left_arm resting",
+    (0, 0), "msG eyebrow normal",
+    (0, 0), "msG eyes normal",
+    (0, 0), WhileSpeaking("msG", "msG mouth normal", "msG mouth speaking"),
+    (0, 0), "msG right_arm",
+    )
+
+image msG mad = LiveComposite(
+    (550, 700),
+    (0, 0), "msG body",
+    (0, 0), "msG head",
+    (0, 0), "msG left_arm resting",
+    (0, 0), "msG eyebrow mad",
+    (0, 0), "msG eyes normal",
+    (0, 0), WhileSpeaking("msG", "msG mouth closed", "msG mouth speaking mad"),
+    (0, 0), "msG right_arm",
+    )
+
+image msG curious = LiveComposite(
+    (550, 700),
+    (0, 0), "msG body",
+    (0, 0), "msG head",
+    (0, 0), "msG left_arm resting",
+    (0, 0), "msG eyebrow curious",
+    (0, 0), "msG eyes normal",
+    (0, 0), WhileSpeaking("msG", "msG mouth eh", "msG mouth speaking"),
+    (0, 0), "msG right_arm",
+    )
+
+image msG neutral explaining = LiveComposite(
+    (550, 700),
+    (0, 0), "msG body",
+    (0, 0), "msG head",
+    (0, 0), WhileSpeaking("msG", "msG left_arm resting", "msG left_arm explaining"),
+    (0, 0), "msG eyebrow normal",
+    (0, 0), "msG eyes normal",
+    (0, 0), WhileSpeaking("msG", "msG mouth normal", "msG mouth speaking"),
+    (0, 0), "msG right_arm",
+    )
+
+image msG curious explaining = LiveComposite(
+    (550, 700),
+    (0, 0), "msG body",
+    (0, 0), "msG head",
+    (0, 0), WhileSpeaking("msG", "msG left_arm resting", "msG left_arm explaining"),
+    (0, 0), "msG eyebrow curious",
+    (0, 0), "msG eyes normal",
+    (0, 0), WhileSpeaking("msG", "msG mouth closed", "msG mouth speaking mad"),
+    (0, 0), "msG right_arm",
+    )
+
+image msG eyes normal:
+    "msG eyes open"
+    choice:
+        3.5
+    choice:
+        2.0
+    choice:
+        1.0
+    "msG eyes closed"
+    .25
+    repeat
+
+image msG body:
+    im.FactorScale("Characters/msG_Body.png", 0.25)
+
+image msG eyebrow normal:
+    im.FactorScale("Characters/msG_Eyebrown-Normal.png", 0.25)
+
+image msG eyebrow mad:
+    im.FactorScale("Characters/msG_Eyebrown-Mad.png", 0.25)
+
+image msG eyebrow curious:
+    im.FactorScale("Characters/msG_Eyebrown-Curious.png", 0.25)
+
+image msG head:
+    im.FactorScale("Characters/msG_Head.png", 0.25)
+
+image msG eyes open:
+    im.FactorScale("Characters/msG_Eyes-Open.png", 0.25)
+
+image msG eyes closed:
+    im.FactorScale("Characters/msG_Eyes-Closed.png", 0.25)
+
+image msG mouth closed:
+    im.FactorScale("Characters/msG_Mouth-Closed-Sad.png", 0.25)
+
+image msG mouth eh:
+    im.FactorScale("Characters/msG_Mouth-Eh.png", 0.25)
+
+image msG mouth kiss:
+    im.FactorScale("Characters/msG_Mouth-Kiss-Ooh.png", 0.25)
+
+image msG mouth normal:
+    im.FactorScale("Characters/msG_Mouth-Normal.png", 0.25)
+
+image msG mouth open:
+    im.FactorScale("Characters/msG_Mouth-Open-Sad-Eh.png", 0.25)
+
+image msG mouth smile:
+    im.FactorScale("Characters/msG_Mouth-Smile-Ah.png", 0.25)
+
+image msG right_arm:
+    im.FactorScale("Characters/msG_RightArm.png", 0.25)
+
+image msG left_arm resting:
+    im.FactorScale("Characters/msG_LeftArm-Resting.png", 0.25)
+
+image msG left_arm explaining:
+    im.FactorScale("Characters/msG_LeftArm-Explaining.png", 0.25)
+
+image msG mouth speaking:
+    choice:
+        "msG mouth normal"
+        choice:
+            .15
+        choice:
+            .10
+    choice:
+        "msG mouth kiss"
+        choice:
+            .20
+        choice:
+            .10
+    choice:
+        "msG mouth eh"
+        choice:
+            .15
+        choice:
+            .10
+    choice:
+        "msG mouth smile"
+        choice:
+            .15
+        choice:
+            .10
+    repeat
+
+image msG mouth speaking mad:
+    choice:
+        "msG mouth closed"
+        choice:
+            .15
+        choice:
+            .10
+    choice:
+        "msG mouth kiss"
+        choice:
+            .20
+        choice:
+            .10
+    choice:
+        "msG mouth eh"
+        choice:
+            .15
+        choice:
+            .10
+    choice:
+        "msG mouth open"
+        choice:
+            .15
+        choice:
+            .10
+    repeat
