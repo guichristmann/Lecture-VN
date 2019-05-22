@@ -1,8 +1,0 @@
-image bg START = im.Scale("images/Slides/START.png", 1280, 720)
-image bg introduction = im.Scale("images/Slides/introduction.png", 1280, 720)
-image bg slide_00003_frag_00000 = im.Scale("images/Slides/slide_00003_frag_00000.png", 1280, 720)
-image bg slide_00004_frag_00000 = im.Scale("images/Slides/slide_00004_frag_00000.png", 1280, 720)
-image bg background = im.Scale("images/Slides/background.png", 1280, 720)
-image bg hierarchy1 = im.Scale("images/Slides/hierarchy1.png", 1280, 720)
-image bg entropy = im.Scale("images/Slides/entropy.png", 1280, 720)
-image bg example = im.Scale("images/Slides/example.png", 1280, 720)

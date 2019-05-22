@@ -1,1 +1,5 @@
 *.pyc
+*.rpyc
+*.save
+Resources/templateProject/game/saves/
+Resources/templateProject/game/cache/
